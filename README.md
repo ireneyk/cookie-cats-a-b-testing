@@ -43,12 +43,12 @@ This project goes beyond basic averages to apply industry-standard statistical r
 
 | Metric | Statistical Result | Business Impact |
 | :--- | :--- | :--- |
-| **Day 1 Retention** | No significant impact (p > 0.05) | Moving the gate does not affect immediate drop-off. |
+| **Day 1 Retention** | No significant impact (p > 0.05) | The results provide evidence that moving the gate to Level 40 negatively affected 7-day retention, although the SRM finding is an important experimental limitation. |
 | **Day 7 Retention** | **Significant drop** (p < 0.05) | Delaying the gate actively harms long-term user retention. |
 | **Game Rounds** | **Significant difference** | The Mann-Whitney U test favored the earlier gate for overall engagement. |
 
 ### The "So What?"
-While it seems intuitive to let players play longer before hitting a paywall, forcing a break earlier (Level 30) creates positive friction. This prevents players from bingeing the game too heavily in one sitting, thereby mitigating **hedonic adaptation** and ensuring they return the following week.
+While it seems intuitive to let players play longer before hitting a paywall, one possible behavioral explanation is that the earlier gate creates a natural interruption in gameplay, potentially encouraging players to return later. However, this mechanism was not directly measured in the dataset..
 
 ---
 

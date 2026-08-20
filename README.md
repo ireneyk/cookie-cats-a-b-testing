@@ -32,10 +32,10 @@
 This project goes beyond basic averages to apply industry-standard statistical rigor to a dataset of **90,000+ players**:
 
 * **Data Cleaning & Outlier Detection:** Identified and removed extreme anomalies (e.g., users with 49,000+ game rounds in 14 days) using 99.9th percentile thresholding to prevent skewed means.
-* **Sample Ratio Mismatch (SRM) Check:** Conducted a Goodness-of-Fit Chi-Square test to verify the 50/50 split. The test flagged a minor SRM (p < 0.05) due to the split being ~50.4% to 49.6%. Because of the massive sample size (90,000+ users), even this tiny 0.4% deviation triggered statistical significance. This was noted as a minor data collection quirk before proceeding with the analysis.
+* **Sample Ratio Mismatch (SRM) Check:** Conducted a Chi-Square Goodness-of-Fit test to assess whether the observed group allocation was consistent with the expected 50/50 split. The test flagged a statistically significant SRM (p < 0.05), although the practical imbalance was small at approximately 50.44% vs. 49.56%. Given the large sample size of 90,000+ users, this small allocation difference was statistically detectable. I flagged the SRM as a limitation and considered it when interpreting the experiment results.
 * **Categorical Testing (Retention):** Deployed **Chi-Square Tests of Independence** to measure the statistical significance of 1-Day and 7-Day retention rate changes.
 * **Continuous Testing (Game Rounds):** Utilized the non-parametric **Mann-Whitney U Test** to analyze total game rounds, bypassing the T-Test due to the heavily right-skewed nature of gaming engagement data.
-* **Bootstrapping:** Resampled the dataset 10,000 times to construct a confidence interval for the percent difference in retention, proving the superiority of the Control group with ~99.9% certainty.
+* **Bootstrapping:** Resampled the dataset 10,000 times to construct a confidence interval for the percent difference in retention, showing that the bootstrap distribution overwhelmingly favored the Level-30 group.
 
 ---
 
